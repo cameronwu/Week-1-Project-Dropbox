@@ -16,6 +16,7 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var strengthImageView: UIImageView!
+    @IBOutlet weak var createView: UIView!
     
     @IBAction func BackToWelcomeButton(sender: AnyObject) {
         navigationController!.popViewControllerAnimated(true)
@@ -26,6 +27,8 @@ class CreateAccountViewController: UIViewController {
 
         createButton.enabled = false
         firstNameField.becomeFirstResponder()
+        createView.hidden = true
+        createView.alpha = 0.0
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
@@ -89,4 +92,15 @@ class CreateAccountViewController: UIViewController {
         checkPasswordStrength()
     }
 
+    @IBAction func createButtonTouchUpInside(sender: AnyObject) {
+        view.endEditing(true)
+        UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: {
+            self.createView.hidden = false
+            self.createView.alpha = 1.0
+            }, completion: {
+                finished in
+                print("Create menu open.")
+        })
+    }
+    
 }

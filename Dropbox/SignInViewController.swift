@@ -15,6 +15,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var emailAddressField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var troubleView: UIView!
     
     var defaults = NSUserDefaults.standardUserDefaults()
     
@@ -30,6 +31,10 @@ class SignInViewController: UIViewController {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+        
+        troubleView.hidden = true
+        troubleView.alpha = 0.0
+
         
         completeSetup()
     }
@@ -68,5 +73,24 @@ class SignInViewController: UIViewController {
     
     @IBAction func passwordField(sender: AnyObject) {
         checkFields()
+    }
+    
+    @IBAction func troubleButtonTouchUpInside(sender: AnyObject) {
+        view.endEditing(true)
+        UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: {
+            self.troubleView.hidden = false
+            self.troubleView.alpha = 1.0
+            }, completion: {
+                finished in
+        })
+    }
+    
+    @IBAction func troubleCancelButtonTouchUpInside(sender: AnyObject) {
+        UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: {
+            self.troubleView.alpha = 0.0
+            }, completion: {
+                finished in
+                self.troubleView.hidden = true
+        })
     }
 }

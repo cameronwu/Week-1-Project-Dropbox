@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122567EC1BAFF6B2007FDE37 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122567EB1BAFF6B2007FDE37 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		123E426B1BABDD3F00960361 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E426A1BABDD3F00960361 /* CreateAccountViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		123E426D1BABDD4C00960361 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E426C1BABDD4C00960361 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		123E426F1BABF09E00960361 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E426E1BABF09E00960361 /* TermsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		123E42711BABF33100960361 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E42701BABF33100960361 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1273CC001BAA9C8B00113174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273CBFF1BAA9C8B00113174 /* AppDelegate.swift */; };
@@ -46,8 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		122567EB1BAFF6B2007FDE37 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		123E426A1BABDD3F00960361 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		123E426C1BABDD4C00960361 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		123E426E1BABF09E00960361 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		123E42701BABF33100960361 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1273CBFC1BAA9C8B00113174 /* Dropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dropbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +162,7 @@
 				123E42701BABF33100960361 /* SettingsViewController.swift */,
 				1273CC301BAAA2A800113174 /* SignInRootViewController.swift */,
 				12CB5BBC1BADD26E001C016E /* SignInTroubleViewController.swift */,
-				123E426C1BABDD4C00960361 /* SignInViewController.swift */,
+				122567EB1BAFF6B2007FDE37 /* SignInViewController.swift */,
 				123E426E1BABF09E00960361 /* TermsViewController.swift */,
 				12CB5BC21BADE766001C016E /* WelcomeViewController.swift */,
 			);
@@ -299,11 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122567EC1BAFF6B2007FDE37 /* SignInViewController.swift in Sources */,
 				123E426B1BABDD3F00960361 /* CreateAccountViewController.swift in Sources */,
 				1273CC311BAAA2A800113174 /* SignInRootViewController.swift in Sources */,
 				12CB5BC31BADE766001C016E /* WelcomeViewController.swift in Sources */,
 				12CB5BC51BAE7702001C016E /* ExistingFilesViewController.swift in Sources */,
-				123E426D1BABDD4C00960361 /* SignInViewController.swift in Sources */,
 				12CB5BC91BAFD9EF001C016E /* ExistingFavoritesViewController.swift in Sources */,
 				12CB5BBB1BADCF5B001C016E /* ExistingPhotosViewController.swift in Sources */,
 				1273CC2E1BAAA28300113174 /* CreateAccountRootViewController.swift in Sources */,
