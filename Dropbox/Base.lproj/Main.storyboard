@@ -662,11 +662,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="2081"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" id="I31-7g-wlF">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
-                                    </view>
                                 </subviews>
                                 <inset key="contentInset" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
                             </scrollView>
@@ -674,6 +669,11 @@
                                 <rect key="frame" x="14" y="510" width="153" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="I31-7g-wlF">
+                                <rect key="frame" x="0.0" y="-196" width="320" height="960"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" id="xYm-IY-Rnl">
                                 <rect key="frame" x="0.0" y="64" width="320" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
